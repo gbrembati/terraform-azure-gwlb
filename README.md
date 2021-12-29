@@ -1,7 +1,7 @@
-# Azure BluePrint Architecture
+# CloudGuard GWLB Deployment on Azure
 This Terraform project is intended to be used as a template in a demonstration or to build a test environment.  
 What it does is creating an infrastructure composed of three directly exposed application, and protect them with a VMSS CloudGuard deployment by using the newly launched Azure GWLB service. These applications will have then the East-West traffic protected by a CloudGuard HA Cluster.    
-   
+
 ## Disclaimer
 Please note that GWLB service is today in Preview and therefore not reccomanded for production workload.     
 You can review the support statement at:     
