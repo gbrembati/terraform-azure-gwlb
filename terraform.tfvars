@@ -10,21 +10,22 @@ location                = "France Central"
 my-pub-ip               = "x.x.x.x/32"
 
 # Management details
-mgmt-sku-enabled        = true
+mgmt-sku-enabled        = false      # Have you ever deployed a R81.10 CKP management? Set to false if not
 mgmt-dns-suffix         = "xxxxx"
 mgmt-admin-pwd          = "xxxxx"
 
 # VMspoke details
-vmspoke-sku-enabled     = true
+vmspoke-sku-enabled     = false      # Have you ever deployed a Nginx VM before? set to false if not
 vmspoke-usr             = "xxxxx"
 vmspoke-pwd             = "xxxxx"
 
 # Cluster Details
+cpcluster-sku-enabled   = false     # Have you ever deployed a R80.40 CKP cluster? set to false if not"
 admin_username          = "xxxxx"
 admin_password          = "xxxxx"
 sic_key                 = "xxxxx"
 
 # GWLB VMSS Details
-gwlb-vmss-agreement     = true
+gwlb-vmss-agreement     = false      # Have you ever deployed a GWLB VMSS? set to false if not
 chkp-admin-pwd          = "xxxxx"
 chkp-sic                = "xxxxx"
