@@ -1,8 +1,12 @@
 # Azure BluePrint Architecture
 This Terraform project is intended to be used as a template in a demonstration or to build a test environment.  
-What it does is creating an infrastructure composed of a North-hub and South-hub and few spokes (the number can be changed).    
-As per my deployments (made in France Central), this project creates all of the following in less than __5 minutes__.   
-
+What it does is creating an infrastructure composed of three directly exposed application, and protect them with a VMSS CloudGuard deployment by using the newly launched Azure GWLB service. These applications will have then the East-West traffic protected by a CloudGuard HA Cluster.    
+   
+## Disclaimer
+Please note that GWLB service is today in Preview and therefore not reccomanded for production workload.     
+You can review the support statement at:     
+1. Microsoft Azure public documentation: [Documentation Link](https://docs.microsoft.com/en-us/azure/load-balancer/gateway-overview)
+2. Check Point public documentation: [Documentation Link](https://sc1.checkpoint.com/documents/IaaS/WebAdminGuides/EN/CP_Azure_VMSS_GWLB/Content/Topics-Azure-VMSS-GWLB/Public-Preview-Disclaimer.htm?tocpath=_____3#Public_Preview_Disclaimer)
 
 ## Which are the components created?
 The project creates the following resources and combine them:
